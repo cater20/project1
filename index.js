@@ -8,10 +8,10 @@ function handleSubmit(e) {
     e.preventDefault()
 
     let fruitObj={
-        fruit:e.target.fruit.value,
-        image_Url:e.target.image_url.value,
+        name:e.target.fruit.value,
+        name:e.target.image_url.value,
         description:e.target.description.value,
-        buy:0
+        buyFruit:0
     } 
 } 
 renderOneFruit(fruitObj)
