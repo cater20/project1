@@ -34,14 +34,19 @@ ${fruit.description}</p>
 </div>
 
 <div class =" button">
-    <button id="payment">Pay$100</button>
+    <button id="payment">Pay$10</button>
     <button id="pass">set Pass</button>
 
 </div>
     `
 
+    card.querySelector('#payment').addEventListener('click',()=>{
+        fruit.payment +=10
+        card.querySelector('span').textContent=fruit.payment
+        updatePayment(fruit)
+    })
     }
-    
+   document.querySelector('#fruit-list').appendChild(card) 
     
 
 
@@ -64,6 +69,18 @@ function buyFruit(fruitObj) {
     .then (res => res.json())
     .then(fruit => console.log(fruit))
 }
+function updatePayment(fruitObj) {
+    fetch (`http://localhost:3000/fruits/${fruitObj.id}`,{
+        method:"PATCH",
+        headers:{
+            "content.Type":"application/json"
+        },
+       body:JSON.stringify(fruitObj) 
+    } )
+    .then (res => res.json())
+    .then(fruit => console.log(fruit))
+}
+
 function initialize() {
     getAllFruits()
 }
