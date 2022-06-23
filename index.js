@@ -1,6 +1,6 @@
 // event listeners
 
-document.querySelector('#fruit-form').addEventListener('submit', handlesubmit)
+document.querySelector('#fruit-form').addEventListener('submit', e)
 
 
 //eventhandlers
