@@ -35,7 +35,7 @@ ${fruit.description}</p>
 
 <div class =" button">
     <button id="payment">Pay$10</button>
-    <button id="pass">set Pass</button>
+    <button id="pass">set-Pass</button>
 
 </div>
     `
@@ -45,7 +45,11 @@ ${fruit.description}</p>
         card.querySelector('span').textContent=fruit.payment
         updatePayment(fruit)
     })
-    }
+    card.querySelector('#set_pass').addEventListener('click',()=>{
+    card.remove()
+    deletefruit(fruit.id)
+})
+}
    document.querySelector('#fruit-list').appendChild(card) 
     
 
@@ -79,6 +83,17 @@ function updatePayment(fruitObj) {
     } )
     .then (res => res.json())
     .then(fruit => console.log(fruit))
+}
+function deleteFruit(id) {
+    fetch (`http://localhost:3000/fruits/${id}`,{
+        method:"DELETE",
+        headers:{
+            "content.Type":"application/json"
+        },
+    
+    } )
+    .then (res => res.json())
+    .then(fruit => console.log(fruit))  
 }
 
 function initialize() {
