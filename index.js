@@ -19,9 +19,31 @@ buyFruit(fruitObj)
 
 //dom
 function renderOneFruit(animal) {
-    let form=document.createElement('li')
-    form.className
-}
+    let card=document.createElement('li')
+    card.className="card"
+    card.id=fruit.id
+    card.innerHTML=`
+    
+< div class ="content">
+<h2>${fruit.name}</h2>
+<p>
+$<span class ="payment">${fruit.payment}</span>Payment
+</p>
+<p>
+${fruit.description}</p>
+</div>
+
+<div class =" button">
+    <button id="payment">Pay$100</button>
+    <button id="pass">set Pass</button>
+
+</div>
+    `
+
+    }
+    
+    
+
 
 //fetch
 function getAllFruits() {
