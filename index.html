@@ -4,9 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOODISH</title>
+    <title>FruitHub</title>
+    <link rel="stylesheet" href="./index.css">
+
 </head>
 <body>
-    
+    <div>
+    <header id ="menu">
+        <h1> Welcome to Fruithub</h1>
+    </header>
+    <div class =" container"> 
+        <div id="form">
+        <form id=" fruit-form">
+            <label for="name">fruit</label><br>
+            <input type="text" id="fruit" name="fruit"/><br>
+            <label for="name">image-URL</label><br>
+                <input type="text" id="image-URL" name="img-URL"/><br>
+                <label for="description">Description</label><br>
+                <textarea id="description" name="description"></textarea><br>
+                <button type="submit">buyFruit</button>
+        </form>
+        </div>
+
+        <div>
+<li>
+        <ul id="fruit-list" class= "card">
+             <img src="apples.jpg" alt ="apples.jpg" >
+                <div class="content">
+                    <h2>apple</h2>
+                    <p>
+                        $<span class="payment">10</span>Payment
+                    </p>
+                    <p>An Apple a day keeps the doctor away,a wise man say that can never  be rebuked <br>to prove it just pick one and you shall see it. </p>
+
+                </div>
+                <div class="button">
+                    <button id="pay">pay $10</button>
+                    <button id="set_pass">pass</button>
+                </div>
+</li>
+        </ul>
+    </div>
+    </div>
+    </div>
+    <script  src="./index.js" ></script>
 </body>
 </html>

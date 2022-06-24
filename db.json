@@ -1,0 +1,47 @@
+{
+    "fruits":[
+        {
+    
+    "name": "Apple",
+    "id": 6,
+    "description": "Apples are considered nutrient-dense fruits, meaning they provide a lot of nutrients per serving",
+   "imageUrl":"apples.jpg" 
+    },
+ {
+   
+    "name": "mangoes",
+    "id": 35,
+    "description":"mangoes are sweet tastie fruit with good quality nutrients",
+    "imageUrl":"mangoes.jpg"
+},
+ {
+
+    "name": "Banana",
+    "id": 1,
+    "description":"so good ,healthy and nutrious to all",
+    "imageUrl":"banana.jpg"
+    
+}, 
+{ 
+    "name": "Lemon",
+    "id": 26,
+    "description": "for health cares ,lemons are the best",
+    "imageUrl":"lemon.jpg"
+    
+    },
+ {
+    
+    "name": "Pineapple",
+    "id": 10,
+    "description":"are yummy ,tastie and frutish ,especially to kids",
+    "imageUrl":"pineaple"
+    },
+
+    {"name": "strawbelly",
+    "id": 13,
+    "description":"awlays everyones favorite ",
+    "imageUrl":"strawbelly"
+    }
+
+]
+}
